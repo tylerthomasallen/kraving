@@ -29,8 +29,8 @@ For example, if someone craves the best burger in town, they do not necessarily 
 ### October 20 - 21 
  - Project proposal - Tianyou
  - User auth - Mike
- - Google Map API research - Tyler
- - Yelp API research - Stephen
+ - Google Map API research - Stephen
+ - Yelp API research - Tyler
 
 ### October 22
 
