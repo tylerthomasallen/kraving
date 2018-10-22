@@ -4,6 +4,8 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import LoginContainer from './session/login_container';
 import SignUpContainer from './session/signup_container';
 import SplashIndex from './splash/splash_index';
+import GoogleMapContainer from './google_map/google_map';
+import SearchContainer from './google_map/search';
 
 const App = () => {
   return (
@@ -12,6 +14,7 @@ const App = () => {
         <Route exact path="/login" component={LoginContainer} />
         <Route exact path="/signup" component={SignUpContainer} />
         <Route exact path="/" component={SplashIndex} />
+        <Route exact path="/map" component={SearchContainer} />
       </Switch>
     </div>
   );
