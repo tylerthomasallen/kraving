@@ -1,0 +1,12 @@
+<h1>List New</h1>
+
+<form action="<%= lists_url %>" method="post">
+  <label>Name
+    <input type="text" name="list[name]" value="<%= @list.name %>">
+  </label>
+  <label>Description
+    <input type="text" name="list[description]" value="<%= @list.description %>">
+  </label>
+  <input type="submit" name="" value="Create New List">
+
+</form>

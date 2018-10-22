@@ -1,0 +1,44 @@
+<h1>List Show</h1>
+
+
+
+<h1>
+
+  <%= @list.name %>
+</h1>
+
+<h1>
+  <%= @list.description %>
+</h1>
+
+
+<h1>
+<a href="<%= edit_list_url(@list) %>">Edit List</a>
+</h1>
+
+
+<!-- #couldn't create becasue my task ccontroller was broken -->
+
+<form action="<%= tasks_url %>" method="post">
+
+  <input type="hidden" name="task[list_id]" value="<%= @list.id %>">
+  <label>Add Task
+<input type="text" name="task[body]" value="">
+</label>
+
+<input type="submit" name="" value="Add Task">
+
+</form>
+
+<% @list.tasks.each do |task| %>
+
+<%= task.body %>
+<form action="<%= task_url(task) %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" name="" value="Remove Task">
+</form>
+
+
+<% end %>
+
+<!-- #couldn't create becasue my task ccontroller was broken -->

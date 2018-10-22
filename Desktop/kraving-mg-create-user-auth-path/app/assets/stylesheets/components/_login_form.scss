@@ -1,0 +1,113 @@
+.session-form-container {
+	background: blue;
+	height: 1000px;
+}
+
+.session-form {
+	display: flex;
+	flex-direction: column;
+	font-size: 17px;
+	line-height: 1.4;
+	font-family: sans-serif;
+	background: blue;
+}
+
+.oc-logo {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	width: 277px;
+	height: 78px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 60px;
+}
+
+.session-form-white {
+	background-color: white;
+	padding: 30px;
+	width: 50%;
+	max-width: 380px;
+	max-height: 318px;
+	height: auto;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	display: block;
+	font-weight: bold;
+	box-shadow: 0 1px 3px 0 #bfbfbf;
+}
+
+#sign-up{
+	max-height: 427px;
+}
+
+.login-button {
+	display: flex;
+	justify-content: center;
+	padding-left: 10px;
+	border: 1px solid #bfbfbf;
+	border-color: rgba(0,0,0,0.15);
+	border-bottom-width: 2px;
+	border-radius: 4px;
+	background-color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+	line-height: inherit;
+	height: 42px;
+	vertical-align: middle;
+	white-space: normal;
+	cursor: pointer;
+	-webkit-appearance: none;
+	transition: box-shadow 0.15s ease-in-out;
+	font-family: sans-serif;
+	font-size: 17px;
+	text-align: center;
+	width: 97%;
+	margin-bottom: 15px;
+}
+
+.session-form-header {
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.input-login {
+	display: inline-block;
+	width: 97%;
+	height: 42px;
+	border: 1px solid #bfbfbf;
+	font-size: 16px;
+	margin: 0 0 20px;
+	padding-left: 10px;
+	vertical-align: middle;
+	border-radius: 4px;
+}
+
+.form-redirect {
+	color: #1b6ac9;
+	margin-top: 20px;
+	text-decoration: underline;
+	font-size: 80%;
+	display: block;
+	text-align: center;
+}
+
+.demo-button {
+	color: blue;
+	width: 97%;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.errors {
+	font-size: 10px;
+	color: #d4442e;
+}

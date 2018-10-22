@@ -1,0 +1,13 @@
+<h1>Edit List/h1>
+
+<form action="<%= list_url(@list) %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <label>Name
+    <input type="text" name="list[name]" value="<%= @list.name %>">
+  </label>
+  <label>Description
+    <input type="text" name="list[description]" value="<%= @list.description %>">
+  </label>
+  <input type="submit" name="" value="Update List">
+
+</form>

@@ -1,0 +1,17 @@
+
+
+<h1>List Index</h1>
+
+
+
+<h1>All Links</h1>
+<ul>
+
+<% current_user.lists.each do |list|  %>
+
+<a href="<%= list_url(list) %>"><%= list.name %></a>
+
+<% end %>
+
+
+</ul>

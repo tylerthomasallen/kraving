@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authentication</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+
+
+<% if logged_in? %>
+<%= current_user.username %>
+<form action="<%= session_url %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" name="" value="Sign Out">
+</form>
+<% else %>
+
+
+<% end %>
+
+<ul>
+
+<% if flash[:errors] %>
+<% flash[:errors].each do |error| %>
+<li>
+  <%= error %>
+</li>
+
+<% end %>
+<% end %>
+</ul>
+
+
+
+
+    <%= yield %>
+  </body>
+</html>
