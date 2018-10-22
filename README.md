@@ -34,7 +34,15 @@ For example, if someone craves the best burger in town, they do not necessarily 
 
 ### October 22
 
+ - User auth - Mike
+ - Add Yelp API to project with successful pings - Tyler
+ - Design - Stephen
+ - Set up Node project - Tim
+
 ### October 23 
+
+ - Reviews CRUD - Tyler
+ - User profile - Mike
 
 ### October 24 
 
